@@ -1,0 +1,20 @@
+{
+  "name": "console-utils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "cmd": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mycodetherapy",
+  "license": "ISC",
+  "dependencies": {
+    "chmod": "^0.2.1",
+    "dayjs": "^1.11.13",
+    "yargs": "^17.7.2"
+  }
+}
