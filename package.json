@@ -5,7 +5,10 @@
   "main": "index.js",
   "type": "module",
   "bin": {
-    "cmd": "./index.js"
+    "current": "./date-cli.js",
+    "add": "./date-cli.js",
+    "sub": "./date-cli.js",
+    "guess": "./guess-cli.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
