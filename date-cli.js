@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 import yargs from 'yargs/yargs';
 import { hideBin } from 'yargs/helpers';
 import dayjs from 'dayjs';
@@ -66,13 +67,13 @@ yargs(hideBin(process.argv))
     (argv) => {
       let result = dayjs();
       switch (true) {
-        case argv.day !== undefined:
+        case argv.day:
           result = result.add(argv.day, 'day');
           break;
-        case argv.month !== undefined:
+        case argv.month:
           result = result.add(argv.month, 'month');
           break;
-        case argv.year !== undefined:
+        case argv.yea:
           result = result.add(argv.year, 'year');
           break;
       }
@@ -103,13 +104,13 @@ yargs(hideBin(process.argv))
     (argv) => {
       let result = dayjs();
       switch (true) {
-        case argv.day !== undefined:
+        case argv.day:
           result = result.subtract(argv.day, 'day');
           break;
-        case argv.month !== undefined:
+        case argv.month:
           result = result.subtract(argv.month, 'month');
           break;
-        case argv.year !== undefined:
+        case argv.year:
           result = result.subtract(argv.year, 'year');
           break;
       }
